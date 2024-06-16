@@ -2,7 +2,7 @@
   <header class="header">
     <div class="header__logo">
       <router-link to="/">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/TikTok_logo.svg/800px-TikTok_logo.svg.png" alt="Logo" class="logo" />
+        <img :src="logoUrl" alt="Logo" class="logo" />
       </router-link>
     </div>
     <div class="header__search">
@@ -23,6 +23,11 @@
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: 'Header',
+   data() {
+    return {
+      logoUrl: 'http://localhost:8000/media/logos/your-logo.png'
+    }
+  }
 }
 </script>
 
