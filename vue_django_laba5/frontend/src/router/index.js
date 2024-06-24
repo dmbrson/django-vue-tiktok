@@ -3,6 +3,10 @@ import Home from '../views/Home.vue'
 import Registration from '../views/Registration.vue'
 import Profile from '../views/Profile.vue'
 import Login from '../views/Login.vue'
+import Subscriptions from '../views/Subscriptions.vue'
+import History from '../views/History.vue'
+import YourVideos from '../views/YourVideos.vue'
+import LikedVideos from '../views/LikedVideos.vue'
 
 const routes = [
   {
@@ -24,6 +28,26 @@ const routes = [
     path: '/login',
     name: 'Login',
     component: Login
+  },
+  {
+    path: '/subscriptions',
+    name: 'Subscriptions',
+    component: Subscriptions
+  },
+  {
+    path: '/history',
+    name: 'History',
+    component: History
+  },
+  {
+    path: '/your-videos',
+    name: 'YourVideos',
+    component: YourVideos
+  },
+  {
+    path: '/liked-videos',
+    name: 'LikedVideos',
+    component: LikedVideos
   }
 ]
 
