@@ -1,6 +1,7 @@
 <template>
   <div>
     <h2>Registration Page</h2>
+    <p>sadasdasdasdsadsadsasdasdasdsadsadsasdasdasdsadsadsasdasdasdsadsadsasdasdasdsadsadsasdasdasdsadsadsasdasdasdsadsadsasdasdasdsadsadsasasd</p>
     <!-- Форма регистрации -->
   </div>
 </template>
