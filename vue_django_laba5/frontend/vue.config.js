@@ -5,6 +5,14 @@ const static_dir = '../app/static'
 const template_path = '../../templates/index.html'
 
 module.exports = {
+    devServer: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:8000',
+        changeOrigin: true,
+      },
+    },
+  },
   // Paths
   // Рабочая директория сборки 
   // Я обычно указываю директорию приложения django, которое отвеает за фронт

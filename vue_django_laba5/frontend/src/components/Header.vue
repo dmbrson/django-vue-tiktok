@@ -181,11 +181,13 @@ export default {
   height: 100%;
   background-color: rgba(0, 0, 0, 0);
   transition: background-color 0.3s ease-in-out;
-  z-index: 900;
+  z-index: 500; /* Changed to be below the header */
+  pointer-events: none; /* Initially, the overlay does not block clicks */
 }
 
 .overlay.active {
   background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: auto; /* When active, the overlay blocks clicks */
 }
 
 body.menu-open {

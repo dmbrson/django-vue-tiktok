@@ -1,20 +1,17 @@
 <template>
   <div id="app">
     <Header />
-    <Navbar />
     <router-view></router-view>
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
-import Navbar from './components/Navbar.vue'
 
 export default {
   name: 'App',
   components: {
-    Header,
-    Navbar
+    Header
   }
 }
 </script>
@@ -28,9 +25,5 @@ export default {
   margin: 0;
   padding: 0;
   text-align: center;
-}
-
-nav {
-  margin-top: 10px;
 }
 </style>
